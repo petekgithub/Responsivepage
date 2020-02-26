@@ -1,0 +1,117 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    font-family: 'Cinzel', serif;
+    background: url(img1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation: slide 10s infinite;
+}
+.social-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    position: absolute;
+}
+
+.social-buttons a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 8px;
+    z-index: 1;
+}
+
+.social-buttons a::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg,#00a8ff,#40739e);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+.social-buttons a:hover::before {
+    transform: scale(0);
+}
+.social-buttons a i {
+    transition: 0.3s ease-in;
+}
+.social-buttons a:hover i {
+    background: linear-gradient(45deg,#00a8ff,#40739e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    transform: scale(2.2);
+}
+h1 {
+    font-size: 6rem;
+    color: blue;
+    letter-spacing: 16px;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+.content span {
+    color: #2980b9;
+    display: block;
+    text-transform: uppercase;
+
+}
+.text1 {
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    animation: text 3s 1;
+}
+.text2 {
+    font-size: 50px;
+    color: #16a085;
+}
+
+ a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 24px;
+    border-radius: 20px;
+    color: #32ff7e;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+@keyframes text {
+    0% {
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
