@@ -1,6 +1,6 @@
-#Responsive Advertisement Page
+# Responsive Advertisement Page
 
-##Achievements: 
+## Achievements: 
 
-*CSS effects, Bootstrap
-*Mailchimp
+* CSS effects, Bootstrap
+* Mailchimp
